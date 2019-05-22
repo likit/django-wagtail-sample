@@ -5,10 +5,9 @@ services:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      - ./app:/app
+      - //c/Likit_Preeyanon/Playground/django-wagtail-sample/app:/app
     ports:
       - "8000:8000"
-      - "80:8000"
   pg:
     image: postgres:10
     volumes:
